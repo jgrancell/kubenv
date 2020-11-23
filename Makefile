@@ -2,7 +2,7 @@ TEST?=$$(go list ./... | grep -v vendor)
 BINARY=kubenv
 VERSION=0.1.0
 OS_ARCH=linux_amd64
-GOBIN=$GOPATH/bin
+GOBIN=${GOPATH}/bin
 
 default: test
 
@@ -11,7 +11,7 @@ build:
 	chmod +x ${BINARY}
 
 install: build
-	mkdir -p $GOBIN
+	mkdir -p ${GOBIN}
 	mv ${BINARY} ${GOPATH}/bin/${BINARY}
 
 test:

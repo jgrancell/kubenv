@@ -4,6 +4,10 @@ go:
   - 1.15.x
   - tip
 
+before_script:
+  - mkdir -p $HOME/.kube
+  - touch $HOME/.kube/config
+
 script:
   - ./go.test.sh
 

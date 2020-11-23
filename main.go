@@ -9,6 +9,10 @@ import (
 )
 
 func main() {
+	Run(os.Args[1:])
+}
+
+func Run(args []string) {
 	version := "0.1.0"
 
 	// Loading configuration
@@ -18,10 +22,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	var result bool
-
-	args := os.Args[1:]
 	if len(args) >= 1 {
+		var result bool
 		command := args[0]
 
 		switch command {
