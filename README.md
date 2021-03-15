@@ -6,7 +6,7 @@ A simple Kubernetes configuration manager.
 [![coverage](https://img.shields.io/codecov/c/github/jgrancell/kubenv?color=65187a&style=for-the-badge&token=p8NQJsRPDX)](https://codecov.io/gh/jgrancell/kubenv/)
 
 [![releases](https://img.shields.io/github/v/release/jgrancell/kubenv?style=for-the-badge)](https://github.com/jgrancell/kubenv/releases)
-[![GitHub license](https://img.shields.io/github/license/jgrancell/kubenv?color=333333&style=for-the-badge)](https://github.com/Jguer/yay/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/jgrancell/kubenv?color=333333&style=for-the-badge)](https://github.com/jgrancell/kubenv/blob/main/LICENSE)
 
 ## Objectives
 
@@ -33,8 +33,5 @@ All releases contain binary packages for the following operating systems:
 | Operating System |  Arch |   Support    |
 | :--------------- |:-----:| :----------: |
 | Linux            | amd64 |   [![supported](https://img.shields.io/badge/status-supported-blue?style=flat-square)](https://github.com/jgrancell/kubenv/releases)  |
-| Linux            |  arm  |   [![supported](https://img.shields.io/badge/status-supported-blue?style=flat-square)](https://github.com/jgrancell/kubenv/releases)  |
-| OSX              | amd64 |   [![supported](https://img.shields.io/badge/status-supported-blue?style=flat-square)](https://github.com/jgrancell/kubenv/releases)  |
-| OSX              | arm |   [![coming soon](https://img.shields.io/badge/status-planned-orange?style=flat-square)](https://github.com/jgrancell/kubenv/releases)  |
 
 Packages for some Linux operating systems as well as OSX homebrew are planned.
