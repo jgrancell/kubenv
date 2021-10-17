@@ -14,7 +14,7 @@ install: build
 	mkdir -p ${GOBIN}
 	mv ${BINARY} ${GOPATH}/bin/${BINARY}
 
-package: build
+binaries: build
 	rm -rf binaries
 	mkdir -p binaries
 	GOOS=linux GOARCH=amd64 go build -o ${BINARY}-${VERSION}-linux-amd64
