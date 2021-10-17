@@ -13,7 +13,7 @@ func main() {
 }
 
 func Run(args []string) {
-	version := "0.1.0"
+	version := "1.0.0"
 
 	// Loading configuration
 	conf, err := settings.LoadConfiguration()

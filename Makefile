@@ -1,6 +1,6 @@
 TEST?=$$(go list ./... | grep -v vendor)
 BINARY=kubenv
-VERSION=0.1.0
+VERSION=1.0.0
 OS_ARCH=linux_amd64
 GOBIN=${GOPATH}/bin
 
@@ -17,9 +17,9 @@ install: build
 package: build
 	rm -rf binaries
 	mkdir -p binaries
-	GOOS=linux GOARCH=amd64 go build -o ${BINARY}-linux-amd64
-	tar -czvf ${BINARY}-linux-amd64.tar.gz ${BINARY}-linux-amd64
-	mv ${BINARY}-linux-amd64.tar.gz binaries/
+	GOOS=linux GOARCH=amd64 go build -o ${BINARY}-${VERSION}-linux-amd64
+	tar -czvf ${BINARY}-${VERSION}-linux-amd64.tar.gz ${BINARY}-${VERSION}-linux-amd64
+	mv ${BINARY}-${VERSION}-linux-amd64.tar.gz binaries/
 
 test:
 #	go test -i $(TEST) -cover || exit 1
