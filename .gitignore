@@ -1,6 +1,5 @@
 cover.out
 coverage.txt
 kubeconfigs
-kubenv*
-binaries/
+artifacts/
 dist/

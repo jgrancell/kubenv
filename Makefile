@@ -15,11 +15,12 @@ install: build
 	mv ${BINARY} ${GOPATH}/bin/${BINARY}
 
 binaries: build
-	rm -rf binaries
-	mkdir -p binaries
+	rm -rf artifacts
+	mkdir -p artifacts
 	GOOS=linux GOARCH=amd64 go build -o ${BINARY}-${VERSION}-linux-amd64
 	tar -czvf ${BINARY}-${VERSION}-linux-amd64.tar.gz ${BINARY}-${VERSION}-linux-amd64
-	mv ${BINARY}-${VERSION}-linux-amd64.tar.gz binaries/
+	mv *.tar.gz artifacts/
+	rm -f kubenv*
 
 test:
 #	go test -i $(TEST) -cover || exit 1
