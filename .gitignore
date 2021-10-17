@@ -1,5 +1,6 @@
 cover.out
 coverage.txt
 kubeconfigs
-kubenv
+kubenv*
+binaries/
 dist/
