@@ -1,6 +1,6 @@
 TEST?=$$(go list ./... | grep -v vendor)
 BINARY=kubenv
-VERSION=1.0.0
+VERSION=$$(grep version main.go | head -n1| cut -d\" -f2)
 OS_ARCH=linux_amd64
 GOBIN=${GOPATH}/bin
 
